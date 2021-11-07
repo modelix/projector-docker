@@ -73,10 +73,10 @@ RUN true \
 # packages for user convenience:
     && apt-get install git bash-completion -y \
 # packages for IDEA (to disable warnings):
-    && apt-get install procps -y \
+    && apt-get install procps -y #\
 # clean apt to reduce image size:
-    && rm -rf /var/lib/apt/lists/* \
-    && rm -rf /var/cache/apt
+    #&& rm -rf /var/lib/apt/lists/* \
+    #&& rm -rf /var/cache/apt
 
 ARG downloadUrl
 
