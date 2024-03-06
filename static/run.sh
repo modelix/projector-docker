@@ -21,4 +21,6 @@ set -x # Activate debugging to show execution details: all commands will be prin
 
 cd /projector/ide/bin
 
+export DISPLAY=:99
+sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 &
 ./ide-projector-launcher.sh
